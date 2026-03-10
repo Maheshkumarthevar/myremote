@@ -11,7 +11,7 @@ steps{
  publishHTML([
 sllowmissing:true,
 alwaysLinktoLastBuild:false,
-KeepAll:false,
+keepAll:false,
 reportDir:'.',
 reportFiles:'Index.html',
 reportName:'MY HTMLPIPE PAGE'
