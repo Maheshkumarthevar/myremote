@@ -1,7 +1,8 @@
 pipeline{
 agent any
-stages('checkout'){
-stage{
+stages
+stage('checkout'){
+ step{
 echo 'cheking out repo'
 git'https://github.com/Maheshkumarthevar/myremote'
 }
@@ -14,7 +15,7 @@ alwaysLinktoLastBuild:false,
 keepAll:false,
 reportDir:'.',
 reportFiles:'Index.html',
-reportName:'MY HTMLPIPE PAGE'
+reportName:'MY HTML PIPE PAGE'
 ])
 }
 }
